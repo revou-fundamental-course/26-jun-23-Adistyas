@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h3>E-Groceries</h3>
+        <nav>
+            <ul>
+                <li><a href="#home" class="menu-link">Home</a></li>
+                <li><a href="#our-package" class="menu-link">Our Package</a></li>
+                <li><a href="#call-us" class="menu-link">Call Us</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <div class="title-home">
+                <h1 class="text-center">Top Rated E-Groceries Shop in Indonesian</h1>
+                <p class="text-center">Every Day with best ingredients</p>
+            </div>
+            <div class="carousel">
+                <img src="img/spanduk1.jpeg"
+                    alt="Slide 1" />
+                <img src="img/spanduk2.jpg" alt="Slide 2"
+                    style="display: none" />
+                <img src="img/spanduk3.jpeg"
+                    alt="Slide 3" style="display: none" />
+            </div>
+            <div class="quote">
+                <p>"This is the quotation text"</p>
+            </div>
+            <div class="icon">
+                <div class="photo">
+                    <img src="img/profile.jpg"
+                        alt="Profile Photo" />
+                </div>
+                <div class="texts">
+                    <h2>Harry Maguire</h2>
+                    <p>Harry Maguire, Tanggal 29</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section id="our-package" class="section">
+            <p class="intro"><b>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </b></p>
+            <br>
+            <div class="package">
+                <div class="item">
+                    <div class="icon">
+                        <div class="photo">
+                            <p>1</p>
+                        </div>
+                        <div class="texts">
+                            <h3>Paket 1</h3>
+                            <p>was popularised in the 1960s with the release</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <div class="photo">
+                            <p>2</p>
+                        </div>
+                        <div class="texts">
+                            <h3>Paket 2</h3>
+                            <p>was popularised in the 1960s with the release</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <div class="photo">
+                            <p>2</p>
+                        </div>
+                        <div class="texts">
+                            <h3>Paket 3</h3>
+                            <p>was popularised in the 1960s with the release</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="call-us" class="section">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <br>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Opsi:</label>
+                        <select id="message" name="message">
+                          <option>Choose Option</option>
+                          <option>Opt 1</option>
+                          <option>Opt 2</option>
+                          <option>Opt 3</option>
+                        </select>
+                      </div>                      
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

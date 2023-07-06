@@ -1,0 +1,239 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #44505c;
+}
+
+header {
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: #999 1px solid;
+}
+
+header h3{
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  border: 1px #44505c solid;
+  padding: 5px;
+}
+
+nav ul li a {
+  color: #44505c;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Home Section */
+.text-center{
+  text-align: center;
+  color: #44505c;
+}
+
+.title-home{
+  margin-bottom: 30px;
+}
+
+.title-home h1{
+  font-size: 22pt;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel img {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) { /* Desktop styles */
+  .carousel img {
+    width: 60%;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 767px) { /* Mobile styles */
+  .carousel img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.quote{
+  font-style: italic;
+  color: #a9b3c1;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon .photo {
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+.icon .photo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.icon .texts {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Our Package Section */
+.package {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600, 1fr));
+  grid-gap: 20px;
+}
+
+.package .intro {
+  text-align: justify;
+  color: #5b7089;
+}
+
+.package .item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.package img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.package .item .icon {
+  color: #5b7089;
+  display: flex;
+  margin-top: 20px;
+}
+
+.package .item .icon .photo {
+  float: left;
+  display: flex;
+  justify-content: center;
+  color: #5b7089;
+  background-color: #eef0f4;
+  padding: 25px 33px;
+  border-radius: 50%;
+  font-size: 20pt;
+}
+
+.package .item .icon .texts {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Call Us Section */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #eef0f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form p{
+  color: #6c747b;
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 30px;
+  background-image: url('path/to/arrow-icon.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+/* Optional styling for the select dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+
+.contact-form button {
+  background-color: #29323d;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
